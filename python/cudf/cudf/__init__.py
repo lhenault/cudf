@@ -10,6 +10,14 @@ import rmm
 
 from cudf import core, datasets, testing
 from cudf._version import get_versions
+from cudf._config import (
+    get_option,
+    set_option,
+    reset_option,
+    describe_option,
+    option_context,
+    options,
+)
 from cudf.api.extensions import (
     register_dataframe_accessor,
     register_index_accessor,
